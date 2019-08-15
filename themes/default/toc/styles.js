@@ -9,7 +9,11 @@ export const Wrapper = styled('nav')`
 export const PageItem = styled('nav')`
   position: relative;
   margin: 0 0 30px 30px;
-  width: 150px;
+  max-width: 150px;
+
+  @media(min-width: 1200px) {
+    width: 15%;
+  }
 
   ${props => props.sticky && css`
     @media (min-width: 1180px) {

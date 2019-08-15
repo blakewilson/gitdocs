@@ -24,8 +24,12 @@ export const ContentWrapper = styled('div')`
 `
 
 export const MarkdownWrapper = styled('div')`
-  flex: 1;
+  flex: 0 1 auto;
   max-width: 850px;
+
+  @media(min-width: 1200px) {
+    width: calc(85% - 30px);
+  }
 
   @media(max-width: 1200px) {
     padding: 0 50px 0 0;
